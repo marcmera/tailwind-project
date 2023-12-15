@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .home-page {
+        background-image: url('https://source.unsplash.com/random') !important;
+        background-size: cover !important;
+        background-position: center !important;
+    }
+
+    .home-h1,.home-p{
+        text-shadow: 2px 2px 5px cyan;
+    }
+
+    .footer {
+        background-color: #1a202c;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+    }
+}
