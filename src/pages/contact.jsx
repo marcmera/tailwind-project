@@ -14,25 +14,16 @@ export function Contact() {
     };
 
     return (
-        <div className="container mx-auto mt-24 border border-gray-200 rounded-lg shadow-lg w-[30%] h-[600px] flex flex-col justify-center items-center">
-            <h1 className="text-5xl text-center font-bold">Contact</h1>
+        <div className="container mx-auto my-16 border border-gray-200 rounded-lg shadow-lg w-[30%] h-[600px] flex flex-col justify-center items-center">
+            <h1 className="text-4xl  text-center font-bold">Contact</h1>
 
-            <form onSubmit={handleSubmit} className="p-4 mt-5 flex flex-col w-[500px]">
+            <form onSubmit={handleSubmit} className="p-4 mb-14 flex flex-col">
                 <label htmlFor="username" className="text-2xl font-bold"> Username</label>
                 <input
                     type="text"
                     className="form-control my-2 w-56"
                     id="username"
                     placeholder=" Username"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                />
-                <label htmlFor="name" className="text-2xl font-bold"> Name</label>
-                <input
-                    type="text"
-                    className="form-control my-2 w-56"
-                    id="name"
-                    placeholder=" Name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                 />
